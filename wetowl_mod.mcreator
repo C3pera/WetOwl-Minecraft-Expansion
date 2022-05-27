@@ -1,0 +1,42 @@
+{
+  "mod_elements": [
+    {
+      "name": "WetOwl",
+      "type": "livingentity",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wet_owl"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.wetowl_mod.wet_owl_spawn_egg": "Wet Owl Spawn Egg",
+      "entity.wetowl_mod.wet_owl": "Wet Owl"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "wetowl_mod",
+    "modName": "WetOwl Mod",
+    "version": "1.0.0",
+    "author": "Серега, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.18.2",
+    "modElementsPackage": "net.mcreator.wetowlmod",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200120510
+}
