@@ -1,0 +1,11 @@
+{
+  "rhodes_lofi": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "wetowl_mod:rhodes_lofi",
+        "stream": true
+      }
+    ]
+  }
+}

@@ -10,11 +10,21 @@
     }
   ],
   "variable_elements": [],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "rhodes_lofi",
+      "files": [
+        "rhodes_lofi"
+      ],
+      "category": "record",
+      "subtitle": ""
+    }
+  ],
   "language_map": {
     "en_us": {
       "item.wetowl_mod.wet_owl_spawn_egg": "Wet Owl Spawn Egg",
-      "entity.wetowl_mod.wet_owl": "Wet Owl"
+      "entity.wetowl_mod.wet_owl": "Wet Owl",
+      "subtitles.rhodes_lofi": ""
     }
   },
   "foldersRoot": {
