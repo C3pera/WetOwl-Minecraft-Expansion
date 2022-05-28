@@ -7,6 +7,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "wet_owl"
+    },
+    {
+      "name": "BigFloppa",
+      "type": "livingentity",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_floppa"
     }
   ],
   "variable_elements": [],
@@ -14,7 +22,9 @@
   "language_map": {
     "en_us": {
       "item.wetowl_mod.wet_owl_spawn_egg": "Wet Owl Spawn Egg",
-      "entity.wetowl_mod.wet_owl": "Wet Owl"
+      "entity.wetowl_mod.wet_owl": "Wet Owl",
+      "entity.wetowl_mod.big_floppa": "Big Floppa",
+      "item.wetowl_mod.big_floppa_spawn_egg": "Big Floppa Spawn Egg"
     }
   },
   "foldersRoot": {

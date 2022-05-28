@@ -2,22 +2,22 @@
   "_fv": 28,
   "_type": "livingentity",
   "definition": {
-    "mobName": "Wet Owl",
+    "mobName": "Big Floppa",
     "mobLabel": "",
-    "mobModelName": "Modelcustom_model",
-    "mobModelTexture": "wetowl3texture.png",
+    "mobModelName": "Modelbigfloppa",
+    "mobModelTexture": "bigfloppafin.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.6,
-    "modelHeight": 0.6,
+    "modelHeight": 0.8,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -8026747,
+      "value": -9745608,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -14218228,
+      "value": -12836070,
       "falpha": 0.0
     },
     "creativeTab": {
@@ -52,7 +52,7 @@
     "movementSpeed": 0.3,
     "armorBaseValue": 0.0,
     "trackingRange": 64,
-    "health": 3,
+    "health": 10,
     "xpAmount": 0,
     "waterMob": false,
     "flyingMob": false,
@@ -77,29 +77,29 @@
     "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": "Items.FEATHER"
-    },
-    "livingSound": {
       "value": ""
     },
+    "livingSound": {
+      "value": "entity.cat.ambient"
+    },
     "hurtSound": {
-      "value": "entity.generic.hurt"
+      "value": "entity.cat.hurt"
     },
     "deathSound": {
-      "value": "entity.generic.death"
+      "value": "entity.cat.death"
     },
     "stepSound": {
       "value": ""
     },
     "spawnParticles": false,
     "particleToSpawn": {
-      "value": "WATER_SPLASH"
+      "value": "EXPLOSION_NORMAL"
     },
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
     "hasAI": true,
-    "aiBase": "Chicken",
+    "aiBase": "(none)",
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
