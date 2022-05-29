@@ -13,8 +13,8 @@ public class WetOwlRenderer extends MobRenderer<WetOwlEntity, Modelcustom_model<
 		super(context, new Modelcustom_model(context.bakeLayer(Modelcustom_model.LAYER_LOCATION)), 0.5f);
 	}
 
-	@Override
+@Override
 	public ResourceLocation getTextureLocation(WetOwlEntity entity) {
-		return new ResourceLocation("wetowl_mod:textures/wetowltexture.png");
+		return new ResourceLocation("wetowl_mod:textures/wetowl3texture.png");
 	}
 }
