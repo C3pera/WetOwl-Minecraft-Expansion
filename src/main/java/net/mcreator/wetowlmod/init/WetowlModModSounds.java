@@ -22,6 +22,7 @@ public class WetowlModModSounds {
 				new SoundEvent(new ResourceLocation("wetowl_mod", "record_just_burning_memory")));
 		REGISTRY.put(new ResourceLocation("wetowl_mod", "record_rhodes_lofi"),
 				new SoundEvent(new ResourceLocation("wetowl_mod", "record_rhodes_lofi")));
+		REGISTRY.put(new ResourceLocation("wetowl_mod", "record_juzz"), new SoundEvent(new ResourceLocation("wetowl_mod", "record_juzz")));
 	}
 
 	@SubscribeEvent

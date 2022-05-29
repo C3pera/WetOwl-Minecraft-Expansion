@@ -18,5 +18,15 @@
         "stream": true
       }
     ]
+  },
+  "record_juzz": {
+    "category": "record",
+    "subtitle": "subtitles.record_juzz",
+    "sounds": [
+      {
+        "name": "wetowl_mod:juzz_for_lulz",
+        "stream": true
+      }
+    ]
   }
 }

@@ -1,0 +1,17 @@
+{
+  "_fv": 28,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "music_disc_rhodes_lofi",
+    "name": "Disc Eienrojin Music",
+    "description": "Eienrojin - juzz for lulz",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "CUSTOM:record_juzz"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

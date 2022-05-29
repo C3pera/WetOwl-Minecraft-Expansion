@@ -14,6 +14,7 @@ import net.minecraft.world.item.CreativeModeTab;
 
 import net.mcreator.wetowlmod.item.DiscrhodeslofiItem;
 import net.mcreator.wetowlmod.item.DiscburningmemoryItem;
+import net.mcreator.wetowlmod.item.DiscEienrojinMusicItem;
 import net.mcreator.wetowlmod.WetowlModMod;
 
 public class WetowlModModItems {
@@ -28,4 +29,5 @@ public class WetowlModModItems {
 			() -> new ForgeSpawnEggItem(WetowlModModEntities.RAT, -1, -20501, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> DISCRHODESLOFI = REGISTRY.register("discrhodeslofi", () -> new DiscrhodeslofiItem());
 	public static final RegistryObject<Item> DISCBURNINGMEMORY = REGISTRY.register("discburningmemory", () -> new DiscburningmemoryItem());
+	public static final RegistryObject<Item> DISC_EIENROJIN_MUSIC = REGISTRY.register("disc_eienrojin_music", () -> new DiscEienrojinMusicItem());
 }
