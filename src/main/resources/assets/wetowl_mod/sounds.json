@@ -1,19 +1,15 @@
 {
-  "rhodes_lofi": {
-    "category": "record",
-    "sounds": [
-      {
-        "name": "wetowl_mod:rhodes_lofi",
-        "stream": true
-      }
-    ]
-  },
   "burning_memory": {
     "category": "record",
     "subtitle": "subtitles.burning_memory",
     "sounds": [
       {
         "name": "wetowl_mod:burning_memory",
+  "rhodes_lofi": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "wetowl_mod:rhodes_lofi",
         "stream": true
       }
     ]

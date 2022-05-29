@@ -9,6 +9,30 @@
       "registry_name": "wet_owl"
     },
     {
+      "name": "PigTest",
+      "type": "livingentity",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pig_test"
+    },
+    {
+      "name": "BigFloppa",
+      "type": "livingentity",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_floppa"
+    },
+    {
+      "name": "Rat",
+      "type": "livingentity",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rat"
+    },
+    {
       "name": "Rhodeslofi",
       "type": "musicdisc",
       "sortid": 2,
@@ -42,6 +66,20 @@
       ],
       "category": "record",
       "subtitle": "It\u0027s just a burning memory"
+      "name": "burning_memory",
+      "files": [
+        "burning_memory"
+      ],
+      "category": "record",
+      "subtitle": "It\u0027s just a burning memory"
+    },
+    {
+      "name": "rhodes_lofi",
+      "files": [
+        "rhodes_lofi"
+      ],
+      "category": "record",
+      "subtitle": ""
     }
   ],
   "language_map": {
