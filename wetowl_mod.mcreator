@@ -52,6 +52,20 @@
   "variable_elements": [],
   "sound_elements": [
     {
+      "name": "rhodes_lofi",
+      "files": [
+        "rhodes_lofi"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "burning_memory",
+      "files": [
+        "burning_memory"
+      ],
+      "category": "record",
+      "subtitle": "It\u0027s just a burning memory"
       "name": "burning_memory",
       "files": [
         "burning_memory"
@@ -100,7 +114,7 @@
     "modid": "wetowl_mod",
     "modName": "WetOwl Mod",
     "version": "1.0.0",
-    "author": "Серега, MCreator",
+    "author": "Серега, Никита",
     "websiteURL": "https://mcreator.net",
     "license": "Academic Free License v3.0",
     "disableForgeVersionCheck": true,
@@ -110,6 +124,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.18.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.wetowlmod",
     "lockBaseModFiles": false
   },
