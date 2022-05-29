@@ -10,20 +10,16 @@ import net.minecraftforge.event.world.BiomeLoadingEvent;
 
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.levelgen.Heightmap;
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.animal.Chicken;
-import net.minecraft.world.entity.ai.navigation.PathNavigation;
-import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
-import net.minecraft.world.entity.ai.control.FlyingMoveControl;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.SpawnPlacements;
@@ -36,7 +32,6 @@ import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
-import net.minecraft.core.BlockPos;
 
 import net.mcreator.wetowlmod.init.WetowlModModEntities;
 
@@ -46,9 +41,11 @@ public class WetOwlEntity extends Chicken {
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
 		event.getSpawns().getSpawner(MobCategory.CREATURE).add(new MobSpawnSettings.SpawnerData(WetowlModModEntities.WET_OWL.get(), 20, 1, 1));
 	}
+
 	public WetOwlEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(WetowlModModEntities.WET_OWL.get(), world);
 	}
+
 	public WetOwlEntity(EntityType<WetOwlEntity> type, Level world) {
 		super(type, world);
 		xpReward = 0;
@@ -74,14 +71,24 @@ public class WetOwlEntity extends Chicken {
 		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
 		this.goalSelector.addGoal(5, new FloatGoal(this));
 	}
+
 	@Override
 	public MobType getMobType() {
 		return MobType.UNDEFINED;
 	}
+
 	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
 		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
 		this.spawnAtLocation(new ItemStack(Items.FEATHER));
-@@ -92,6 +103,25 @@
+	}
+
+	@Override
+	public SoundEvent getHurtSound(DamageSource ds) {
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.hurt"));
+	}
+
+	@Override
+	public SoundEvent getDeathSound() {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
 	}
 
@@ -90,6 +97,7 @@ public class WetOwlEntity extends Chicken {
 				(entityType, world, reason, pos,
 						random) -> (world.getBlockState(pos.below()).getMaterial() == Material.GRASS && world.getRawBrightness(pos, 0) > 8));
 	}
+
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
 		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
