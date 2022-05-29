@@ -15,6 +15,6 @@ public class WetOwlRenderer extends MobRenderer<WetOwlEntity, Modelcustom_model<
 
 	@Override
 	public ResourceLocation getTextureLocation(WetOwlEntity entity) {
-		return new ResourceLocation("wetowl_mod:textures/wetowl3texture.png");
+		return new ResourceLocation("wetowl_mod:textures/wetowltexture.png");
 	}
 }

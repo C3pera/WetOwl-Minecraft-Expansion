@@ -5,19 +5,19 @@
     "mobName": "Wet Owl",
     "mobLabel": "",
     "mobModelName": "Modelcustom_model",
-    "mobModelTexture": "wetowl3texture.png",
+    "mobModelTexture": "wetowltexture.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.6,
-    "modelHeight": 0.6,
+    "modelHeight": 1.8,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -8026747,
+      "value": -6513508,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -14218228,
+      "value": -12510180,
       "falpha": 0.0
     },
     "creativeTab": {
@@ -52,10 +52,10 @@
     "movementSpeed": 0.3,
     "armorBaseValue": 0.0,
     "trackingRange": 64,
-    "health": 3,
+    "health": 5,
     "xpAmount": 0,
     "waterMob": false,
-    "flyingMob": false,
+    "flyingMob": true,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
@@ -93,7 +93,7 @@
     },
     "spawnParticles": false,
     "particleToSpawn": {
-      "value": "WATER_SPLASH"
+      "value": "EXPLOSION_NORMAL"
     },
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,

@@ -29,7 +29,7 @@ public class WetowlModModEntities {
 			EntityType.Builder.<WetOwlEntity>of(WetOwlEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(3).setCustomClientFactory(WetOwlEntity::new)
 
-					.sized(0.6f, 0.6f));
+					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<BigFloppaEntity>> BIG_FLOPPA = register("big_floppa",
 			EntityType.Builder.<BigFloppaEntity>of(BigFloppaEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BigFloppaEntity::new)
