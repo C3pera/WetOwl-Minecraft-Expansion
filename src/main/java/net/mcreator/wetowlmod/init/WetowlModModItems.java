@@ -12,6 +12,8 @@ import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 
+import net.mcreator.wetowlmod.item.DiscrhodeslofiItem;
+import net.mcreator.wetowlmod.item.DiscburningmemoryItem;
 import net.mcreator.wetowlmod.WetowlModMod;
 
 public class WetowlModModItems {
@@ -24,4 +26,6 @@ public class WetowlModModItems {
 			() -> new ForgeSpawnEggItem(WetowlModModEntities.PIG_TEST, -1, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> RAT = REGISTRY.register("rat_spawn_egg",
 			() -> new ForgeSpawnEggItem(WetowlModModEntities.RAT, -1, -20501, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> DISCRHODESLOFI = REGISTRY.register("discrhodeslofi", () -> new DiscrhodeslofiItem());
+	public static final RegistryObject<Item> DISCBURNINGMEMORY = REGISTRY.register("discburningmemory", () -> new DiscburningmemoryItem());
 }

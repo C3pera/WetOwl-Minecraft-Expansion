@@ -1,0 +1,17 @@
+{
+  "_fv": 28,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "music_disc_rhodes_lofi",
+    "name": "Rhodes lofi",
+    "description": "Meridian3301 - lofi hiphop style",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "CUSTOM:record_rhodes_lofi"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

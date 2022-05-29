@@ -1,13 +1,19 @@
 {
+  "item.wetowl_mod.wet_owl_spawn_egg": "Яйцо призыва мокрой совы",
+  "entity.wetowl_mod.wet_owl": "Мокрая сова",
+  "item.wetowl_mod.discrhodeslofi": "Rhodes lofi",
+  "subtitles.record_just_burning_memory": " Trollge - It\u0027s Just A Burning Memory",
+  "item.wetowl_mod.rat_spawn_egg": "Rat Spawn Egg",
   "entity.wetowl_mod.rat": "Rat",
   "subtitles.burning_mem0ry": "It\u0027s just a burning memory",
-  "item.wetowl_mod.wet_owl_spawn_egg": "Яйцо призыва мокрой совы",
   "subtitles.burning_memory": "It\u0027s just a burning memory",
-  "entity.wetowl_mod.wet_owl": "Мокрая сова",
+  "item.wetowl_mod.discrhodeslofi.desc": "Meridian3301 - lofi hiphop style",
   "subtitles.rhodes_lofi": "Rhodes lofi",
-  "entity.wetowl_mod.big_floppa": "Big Floppa",
   "entity.wetowl_mod.pig_test": "Pig Test",
-  "item.wetowl_mod.rat_spawn_egg": "Rat Spawn Egg",
+  "entity.wetowl_mod.big_floppa": "Big Floppa",
   "item.wetowl_mod.big_floppa_spawn_egg": "Big Floppa Spawn Egg",
-  "item.wetowl_mod.pig_test_spawn_egg": "Pig Test Spawn Egg"
+  "item.wetowl_mod.pig_test_spawn_egg": "Pig Test Spawn Egg",
+  "item.wetowl_mod.discburningmemory": "It\u0027s Just A Burning Memory",
+  "item.wetowl_mod.discburningmemory.desc": " Trollge - It\u0027s Just A Burning Memory",
+  "subtitles.record_rhodes_lofi": "Meridian3301 - lofi hiphop style"
 }
