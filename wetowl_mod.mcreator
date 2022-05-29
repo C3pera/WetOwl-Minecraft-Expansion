@@ -9,14 +9,6 @@
       "registry_name": "wet_owl"
     },
     {
-      "name": "BigFloppa",
-      "type": "livingentity",
-      "sortid": 2,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "big_floppa"
-    },
-    {
       "name": "PigTest",
       "type": "livingentity",
       "sortid": 3,
@@ -25,26 +17,79 @@
       "registry_name": "pig_test"
     },
     {
+      "name": "BigFloppa",
+      "type": "livingentity",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_floppa"
+    },
+    {
       "name": "Rat",
       "type": "livingentity",
       "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rat"
+    },
+    {
+      "name": "Rhodeslofi",
+      "type": "musicdisc",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rhodeslofi"
+    },
+    {
+      "name": "BurningMemory",
+      "type": "musicdisc",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burning_memory"
     }
   ],
   "variable_elements": [],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "burning_memory",
+      "files": [
+        "burning_memory"
+      ],
+      "category": "record",
+      "subtitle": "It\u0027s just a burning memory"
+    },
+    {
+      "name": "rhodes_lofi",
+      "files": [
+        "rhodes_lofi"
+      ],
+      "category": "record",
+      "subtitle": ""
+    }
+  ],
   "language_map": {
+    "ru_ru": {
+      "subtitles.burning_mem0ry": "It\u0027s just a burning memory",
+      "item.wetowl_mod.wet_owl_spawn_egg": "Яйцо призыва мокрой совы",
+      "subtitles.burning_memory": "It\u0027s just a burning memory",
+      "entity.wetowl_mod.wet_owl": "Мокрая сова",
+      "item.wetowl_mod.burning_memory.desc": "Trollge - It\u0027s just a burning memory",
+      "item.wetowl_mod.burning_memory": "Burning Memory",
+      "subtitles.rhodes_lofi": "Rhodes lofi",
+      "item.wetowl_mod.rhodeslofi": "Rhodes lofi",
+      "item.wetowl_mod.rhodeslofi.desc": "Meridian3301 - lofi hiphop style"
+    },
     "en_us": {
-      "entity.wetowl_mod.rat": "Rat",
+      "subtitles.burning_mem0ry": "It\u0027s just a burning memory",
       "item.wetowl_mod.wet_owl_spawn_egg": "Wet Owl Spawn Egg",
+      "subtitles.burning_memory": "It\u0027s just a burning memory",
       "entity.wetowl_mod.wet_owl": "Wet Owl",
-      "entity.wetowl_mod.big_floppa": "Big Floppa",
-      "entity.wetowl_mod.pig_test": "Pig Test",
-      "item.wetowl_mod.rat_spawn_egg": "Rat Spawn Egg",
-      "item.wetowl_mod.big_floppa_spawn_egg": "Big Floppa Spawn Egg",
-      "item.wetowl_mod.pig_test_spawn_egg": "Pig Test Spawn Egg"
+      "item.wetowl_mod.burning_memory.desc": "Trollge - It\u0027s just a burning memory",
+      "item.wetowl_mod.burning_memory": "Burning Memory",
+      "subtitles.rhodes_lofi": "Rhodes lofi",
+      "item.wetowl_mod.rhodeslofi": "Rhodes lofi",
+      "item.wetowl_mod.rhodeslofi.desc": "Meridian3301 - lofi hiphop style"
     }
   },
   "foldersRoot": {
