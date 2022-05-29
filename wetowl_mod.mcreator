@@ -4,7 +4,7 @@
       "name": "WetOwl",
       "type": "livingentity",
       "sortid": 1,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "wet_owl"
     },
