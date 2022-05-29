@@ -1,5 +1,11 @@
 {
+  "subtitles.burning_mem0ry": "It\u0027s just a burning memory",
   "item.wetowl_mod.wet_owl_spawn_egg": "Wet Owl Spawn Egg",
+  "subtitles.burning_memory": "It\u0027s just a burning memory",
   "entity.wetowl_mod.wet_owl": "Wet Owl",
-  "subtitles.rhodes_lofi": ""
+  "item.wetowl_mod.burning_memory.desc": "Trollge - It\u0027s just a burning memory",
+  "item.wetowl_mod.burning_memory": "Burning Memory",
+  "subtitles.rhodes_lofi": "Rhodes lofi",
+  "item.wetowl_mod.rhodeslofi": "Rhodes lofi",
+  "item.wetowl_mod.rhodeslofi.desc": "Meridian3301 - lofi hiphop style"
 }

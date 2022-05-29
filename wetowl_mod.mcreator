@@ -7,6 +7,22 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "wet_owl"
+    },
+    {
+      "name": "Rhodeslofi",
+      "type": "musicdisc",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rhodeslofi"
+    },
+    {
+      "name": "BurningMemory",
+      "type": "musicdisc",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burning_memory"
     }
   ],
   "variable_elements": [],
@@ -18,13 +34,38 @@
       ],
       "category": "record",
       "subtitle": ""
+    },
+    {
+      "name": "burning_memory",
+      "files": [
+        "burning_memory"
+      ],
+      "category": "record",
+      "subtitle": "It\u0027s just a burning memory"
     }
   ],
   "language_map": {
+    "ru_ru": {
+      "subtitles.burning_mem0ry": "It\u0027s just a burning memory",
+      "item.wetowl_mod.wet_owl_spawn_egg": "Яйцо призыва мокрой совы",
+      "subtitles.burning_memory": "It\u0027s just a burning memory",
+      "entity.wetowl_mod.wet_owl": "Мокрая сова",
+      "item.wetowl_mod.burning_memory.desc": "Trollge - It\u0027s just a burning memory",
+      "item.wetowl_mod.burning_memory": "Burning Memory",
+      "subtitles.rhodes_lofi": "Rhodes lofi",
+      "item.wetowl_mod.rhodeslofi": "Rhodes lofi",
+      "item.wetowl_mod.rhodeslofi.desc": "Meridian3301 - lofi hiphop style"
+    },
     "en_us": {
+      "subtitles.burning_mem0ry": "It\u0027s just a burning memory",
       "item.wetowl_mod.wet_owl_spawn_egg": "Wet Owl Spawn Egg",
+      "subtitles.burning_memory": "It\u0027s just a burning memory",
       "entity.wetowl_mod.wet_owl": "Wet Owl",
-      "subtitles.rhodes_lofi": ""
+      "item.wetowl_mod.burning_memory.desc": "Trollge - It\u0027s just a burning memory",
+      "item.wetowl_mod.burning_memory": "Burning Memory",
+      "subtitles.rhodes_lofi": "Rhodes lofi",
+      "item.wetowl_mod.rhodeslofi": "Rhodes lofi",
+      "item.wetowl_mod.rhodeslofi.desc": "Meridian3301 - lofi hiphop style"
     }
   },
   "foldersRoot": {
@@ -35,7 +76,7 @@
     "modid": "wetowl_mod",
     "modName": "WetOwl Mod",
     "version": "1.0.0",
-    "author": "Серега, MCreator",
+    "author": "Серега, Никита",
     "websiteURL": "https://mcreator.net",
     "license": "Academic Free License v3.0",
     "disableForgeVersionCheck": true,
@@ -45,6 +86,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.18.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.wetowlmod",
     "lockBaseModFiles": false
   },

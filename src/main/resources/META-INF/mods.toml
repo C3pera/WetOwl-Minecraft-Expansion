@@ -8,7 +8,7 @@ version="1.0.0"
 displayName="WetOwl Mod"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 displayURL="https://mcreator.net"
-authors="Серега, MCreator"
+authors="Серега, Никита"
 
 [[dependencies.wetowl_mod]]
     modId="minecraft"

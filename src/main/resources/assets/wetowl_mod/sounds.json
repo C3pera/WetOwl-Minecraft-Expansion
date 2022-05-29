@@ -7,5 +7,15 @@
         "stream": true
       }
     ]
+  },
+  "burning_memory": {
+    "category": "record",
+    "subtitle": "subtitles.burning_memory",
+    "sounds": [
+      {
+        "name": "wetowl_mod:burning_memory",
+        "stream": true
+      }
+    ]
   }
 }

@@ -19,6 +19,7 @@ public class WetowlModModSounds {
 	public static Map<ResourceLocation, SoundEvent> REGISTRY = new HashMap<>();
 	static {
 		REGISTRY.put(new ResourceLocation("wetowl_mod", "rhodes_lofi"), new SoundEvent(new ResourceLocation("wetowl_mod", "rhodes_lofi")));
+		REGISTRY.put(new ResourceLocation("wetowl_mod", "burning_memory"), new SoundEvent(new ResourceLocation("wetowl_mod", "burning_memory")));
 	}
 
 	@SubscribeEvent
