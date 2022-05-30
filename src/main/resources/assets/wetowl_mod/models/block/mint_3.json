@@ -1,0 +1,7 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "wetowl_mod:blocks/miata2",
+    "particle": "wetowl_mod:blocks/miata2"
+  }
+}

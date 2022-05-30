@@ -6,7 +6,7 @@
     "name": "Disc Eienrojin Music",
     "description": "Eienrojin - juzz for lulz",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:OwlMisc"
     },
     "music": {
       "value": "CUSTOM:record_juzz"

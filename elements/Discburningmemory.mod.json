@@ -6,7 +6,7 @@
     "name": "It's Just A Burning Memory",
     "description": " Trollge - It's Just A Burning Memory",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:OwlMisc"
     },
     "music": {
       "value": "CUSTOM:record_just_burning_memory"
