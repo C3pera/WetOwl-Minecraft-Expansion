@@ -12,7 +12,9 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.mcreator.wetowlmod.client.renderer.WetOwlRenderer;
 import net.mcreator.wetowlmod.client.renderer.RatRenderer;
 import net.mcreator.wetowlmod.client.renderer.PigTestRenderer;
+import net.mcreator.wetowlmod.client.renderer.BoogeyRenderer;
 import net.mcreator.wetowlmod.client.renderer.BigFloppaRenderer;
+import net.mcreator.wetowlmod.client.renderer.AxolotlTestRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class WetowlModModEntityRenderers {
@@ -22,5 +24,7 @@ public class WetowlModModEntityRenderers {
 		event.registerEntityRenderer(WetowlModModEntities.BIG_FLOPPA.get(), BigFloppaRenderer::new);
 		event.registerEntityRenderer(WetowlModModEntities.PIG_TEST.get(), PigTestRenderer::new);
 		event.registerEntityRenderer(WetowlModModEntities.RAT.get(), RatRenderer::new);
+		event.registerEntityRenderer(WetowlModModEntities.AXOLOTL_TEST.get(), AxolotlTestRenderer::new);
+		event.registerEntityRenderer(WetowlModModEntities.BOOGEY.get(), BoogeyRenderer::new);
 	}
 }

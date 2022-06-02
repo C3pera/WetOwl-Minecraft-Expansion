@@ -1,13 +1,17 @@
 {
+  "entity.wetowl_mod.boogey": "Boogey",
+  "item.wetowl_mod.wet_owl_spawn_egg": "Яйцо призыва мокрой совы",
+  "entity.wetowl_mod.wet_owl": "Мокрая сова",
+  "item.wetowl_mod.axolotl_test_spawn_egg": "Axolotl Test Spawn Egg",
+  "item.wetowl_mod.rat_spawn_egg": "Rat Spawn Egg",
+  "entity.wetowl_mod.axolotl_test": "Axolotl Test",
   "entity.wetowl_mod.rat": "Rat",
   "subtitles.burning_mem0ry": "It\u0027s just a burning memory",
-  "item.wetowl_mod.wet_owl_spawn_egg": "Яйцо призыва мокрой совы",
   "subtitles.burning_memory": "It\u0027s just a burning memory",
-  "entity.wetowl_mod.wet_owl": "Мокрая сова",
   "subtitles.rhodes_lofi": "Rhodes lofi",
   "entity.wetowl_mod.big_floppa": "Big Floppa",
   "entity.wetowl_mod.pig_test": "Pig Test",
-  "item.wetowl_mod.rat_spawn_egg": "Rat Spawn Egg",
+  "item.wetowl_mod.boogey_spawn_egg": "Boogey Spawn Egg",
   "item.wetowl_mod.big_floppa_spawn_egg": "Big Floppa Spawn Egg",
   "item.wetowl_mod.pig_test_spawn_egg": "Pig Test Spawn Egg"
 }

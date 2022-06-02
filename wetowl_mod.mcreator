@@ -31,6 +31,22 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "rat"
+    },
+    {
+      "name": "AxolotlTest",
+      "type": "livingentity",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "axolotl_test"
+    },
+    {
+      "name": "Boogey",
+      "type": "livingentity",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boogey"
     }
   ],
   "variable_elements": [],
@@ -54,28 +70,36 @@
   ],
   "language_map": {
     "ru_ru": {
+      "entity.wetowl_mod.boogey": "Boogey",
+      "item.wetowl_mod.wet_owl_spawn_egg": "Яйцо призыва мокрой совы",
+      "entity.wetowl_mod.wet_owl": "Мокрая сова",
+      "item.wetowl_mod.axolotl_test_spawn_egg": "Axolotl Test Spawn Egg",
+      "item.wetowl_mod.rat_spawn_egg": "Rat Spawn Egg",
+      "entity.wetowl_mod.axolotl_test": "Axolotl Test",
       "entity.wetowl_mod.rat": "Rat",
       "subtitles.burning_mem0ry": "It\u0027s just a burning memory",
-      "item.wetowl_mod.wet_owl_spawn_egg": "Яйцо призыва мокрой совы",
       "subtitles.burning_memory": "It\u0027s just a burning memory",
-      "entity.wetowl_mod.wet_owl": "Мокрая сова",
       "subtitles.rhodes_lofi": "Rhodes lofi",
       "entity.wetowl_mod.big_floppa": "Big Floppa",
       "entity.wetowl_mod.pig_test": "Pig Test",
-      "item.wetowl_mod.rat_spawn_egg": "Rat Spawn Egg",
+      "item.wetowl_mod.boogey_spawn_egg": "Boogey Spawn Egg",
       "item.wetowl_mod.big_floppa_spawn_egg": "Big Floppa Spawn Egg",
       "item.wetowl_mod.pig_test_spawn_egg": "Pig Test Spawn Egg"
     },
     "en_us": {
+      "entity.wetowl_mod.boogey": "Boogey",
+      "item.wetowl_mod.wet_owl_spawn_egg": "Wet Owl Spawn Egg",
+      "entity.wetowl_mod.wet_owl": "Wet Owl",
+      "item.wetowl_mod.axolotl_test_spawn_egg": "Axolotl Test Spawn Egg",
+      "item.wetowl_mod.rat_spawn_egg": "Rat Spawn Egg",
+      "entity.wetowl_mod.axolotl_test": "Axolotl Test",
       "entity.wetowl_mod.rat": "Rat",
       "subtitles.burning_mem0ry": "It\u0027s just a burning memory",
-      "item.wetowl_mod.wet_owl_spawn_egg": "Wet Owl Spawn Egg",
       "subtitles.burning_memory": "It\u0027s just a burning memory",
-      "entity.wetowl_mod.wet_owl": "Wet Owl",
       "subtitles.rhodes_lofi": "Rhodes lofi",
       "entity.wetowl_mod.big_floppa": "Big Floppa",
       "entity.wetowl_mod.pig_test": "Pig Test",
-      "item.wetowl_mod.rat_spawn_egg": "Rat Spawn Egg",
+      "item.wetowl_mod.boogey_spawn_egg": "Boogey Spawn Egg",
       "item.wetowl_mod.big_floppa_spawn_egg": "Big Floppa Spawn Egg",
       "item.wetowl_mod.pig_test_spawn_egg": "Pig Test Spawn Egg"
     }

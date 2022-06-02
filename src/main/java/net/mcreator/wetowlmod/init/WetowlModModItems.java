@@ -24,4 +24,8 @@ public class WetowlModModItems {
 			() -> new ForgeSpawnEggItem(WetowlModModEntities.PIG_TEST, -1, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> RAT = REGISTRY.register("rat_spawn_egg",
 			() -> new ForgeSpawnEggItem(WetowlModModEntities.RAT, -1, -20501, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> AXOLOTL_TEST = REGISTRY.register("axolotl_test_spawn_egg",
+			() -> new ForgeSpawnEggItem(WetowlModModEntities.AXOLOTL_TEST, -65293, -16777216, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> BOOGEY = REGISTRY.register("boogey_spawn_egg",
+			() -> new ForgeSpawnEggItem(WetowlModModEntities.BOOGEY, -14869219, -6868466, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 }
