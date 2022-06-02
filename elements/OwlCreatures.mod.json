@@ -2,10 +2,10 @@
   "_fv": 28,
   "_type": "tab",
   "definition": {
-    "name": "Owl Creatures",
+    "name": "WetOwl's Creatures",
     "icon": {
       "value": "Items.AXOLOTL_BUCKET"
     },
-    "showSearch": true
+    "showSearch": false
   }
 }

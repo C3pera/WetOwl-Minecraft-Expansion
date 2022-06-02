@@ -2,9 +2,9 @@
   "_fv": 28,
   "_type": "tab",
   "definition": {
-    "name": "Owl Food",
+    "name": "WetOwl's Food",
     "icon": {
-      "value": "Items.APPLE"
+      "value": "CUSTOM:MintLeaves"
     },
     "showSearch": false
   }
