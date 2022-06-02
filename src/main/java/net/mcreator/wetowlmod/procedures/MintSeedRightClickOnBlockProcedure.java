@@ -44,7 +44,8 @@ public class MintSeedRightClickOnBlockProcedure {
 		seeds = new ItemStack(WetowlModModItems.MINT_SEED.get());
 		stage0 = WetowlModModBlocks.MINT_0.get().defaultBlockState();
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == seeds.getItem()
-				&& (world.getBlockState(new BlockPos(x, y, z))).getBlock() == Blocks.FARMLAND
+				&& ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == Blocks.FARMLAND
+						|| (world.getBlockState(new BlockPos(x, y, z))).getBlock() == Blocks.GRASS_BLOCK)
 				&& (world.getBlockState(new BlockPos(x, y + 1, z))).getMaterial() == net.minecraft.world.level.material.Material.AIR
 				&& stage0.canSurvive(world, new BlockPos(x, y + 1, z))) {
 			world.setBlock(new BlockPos(x, y + 1, z), stage0, 3);
