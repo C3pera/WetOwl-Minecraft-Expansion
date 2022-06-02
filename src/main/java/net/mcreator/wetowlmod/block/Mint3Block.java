@@ -5,10 +5,9 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
-import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.BlockHitResult;
-import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.material.MaterialColor;
 import net.minecraft.world.level.material.Material;
@@ -21,7 +20,6 @@ import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.InteractionResult;
@@ -37,16 +35,13 @@ import net.mcreator.wetowlmod.procedures.Mint0NearBlockChangedProcedure;
 import net.mcreator.wetowlmod.init.WetowlModModBlocks;
 import net.mcreator.wetowlmod.block.entity.Mint3BlockEntity;
 
-import java.util.List;
-import java.util.Collections;
-
 public class Mint3Block extends Block
 		implements
 
 			EntityBlock {
 	public Mint3Block() {
 		super(BlockBehaviour.Properties.of(Material.PLANT, MaterialColor.PLANT).sound(SoundType.CROP).instabreak().noCollission().noOcclusion()
-				.isRedstoneConductor((bs, br, bp) -> false).dynamicShape());
+				.isRedstoneConductor((bs, br, bp) -> false).dynamicShape().noDrops());
 	}
 
 	@Override
@@ -61,8 +56,7 @@ public class Mint3Block extends Block
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		Vec3 offset = state.getOffset(world, pos);
-		return box(0, 1, 0, 16, 4, 16).move(offset.x, offset.y, offset.z);
+		return Shapes.empty();
 	}
 
 	@Override
@@ -76,14 +70,6 @@ public class Mint3Block extends Block
 	}
 
 	@Override
-	public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
-		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
-		if (!dropsOriginal.isEmpty())
-			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(this, 1));
-	}
-
-	@Override
 	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
 		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
 		Mint0NearBlockChangedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
@@ -92,7 +78,7 @@ public class Mint3Block extends Block
 	@Override
 	public boolean onDestroyedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, boolean willHarvest, FluidState fluid) {
 		boolean retval = super.onDestroyedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
-		Mint3WhenFullyGrowdProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		Mint3WhenFullyGrowdProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
 		return retval;
 	}
 

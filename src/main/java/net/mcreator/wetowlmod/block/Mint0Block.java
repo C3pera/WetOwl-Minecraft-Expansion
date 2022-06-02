@@ -49,7 +49,7 @@ public class Mint0Block extends Block
 			EntityBlock {
 	public Mint0Block() {
 		super(BlockBehaviour.Properties.of(Material.PLANT, MaterialColor.PLANT).sound(SoundType.CROP).instabreak().noCollission().noOcclusion()
-				.isRedstoneConductor((bs, br, bp) -> false).dynamicShape());
+				.isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override
@@ -66,11 +66,6 @@ public class Mint0Block extends Block
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		Vec3 offset = state.getOffset(world, pos);
 		return box(0, 0.01, 0, 16, 4, 16).move(offset.x, offset.y, offset.z);
-	}
-
-	@Override
-	public Block.OffsetType getOffsetType() {
-		return Block.OffsetType.XZ;
 	}
 
 	@Override
@@ -112,7 +107,7 @@ public class Mint0Block extends Block
 	@Override
 	public boolean onDestroyedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, boolean willHarvest, FluidState fluid) {
 		boolean retval = super.onDestroyedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
-		MintWhenNotFullyGrowdProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		MintWhenNotFullyGrowdProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
 		return retval;
 	}
 

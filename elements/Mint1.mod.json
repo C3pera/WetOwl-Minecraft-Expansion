@@ -24,11 +24,11 @@
     "boundingBoxes": [
       {
         "mx": 0.0,
-        "my": 0.01,
+        "my": 1.0,
         "mz": 0.0,
-        "Mx": 16.0,
+        "Mx": 0.0,
         "My": 4.0,
-        "Mz": 16.0,
+        "Mz": 0.0,
         "subtract": false
       }
     ],

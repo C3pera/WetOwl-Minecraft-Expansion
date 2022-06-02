@@ -11,7 +11,8 @@ import net.mcreator.wetowlmod.init.WetowlModModItems;
 
 public class Mint0NearBlockChangedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if (!((world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == Blocks.FARMLAND)) {
+		if (!((world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == Blocks.FARMLAND
+				|| (world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == Blocks.GRASS_BLOCK)) {
 			world.destroyBlock(new BlockPos(x, y, z), false);
 			if (world instanceof Level _level && !_level.isClientSide()) {
 				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(WetowlModModItems.MINT_SEED.get()));
