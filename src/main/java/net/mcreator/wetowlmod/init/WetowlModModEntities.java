@@ -21,7 +21,6 @@ import net.mcreator.wetowlmod.entity.RatEntity;
 import net.mcreator.wetowlmod.entity.PigTestEntity;
 import net.mcreator.wetowlmod.entity.BoogeyEntity;
 import net.mcreator.wetowlmod.entity.BigFloppaEntity;
-import net.mcreator.wetowlmod.entity.AxolotlTestEntity;
 import net.mcreator.wetowlmod.WetowlModMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -47,11 +46,6 @@ public class WetowlModModEntities {
 					.setUpdateInterval(3).setCustomClientFactory(RatEntity::new)
 
 					.sized(0.6f, 0.4f));
-	public static final RegistryObject<EntityType<AxolotlTestEntity>> AXOLOTL_TEST = register("axolotl_test",
-			EntityType.Builder.<AxolotlTestEntity>of(AxolotlTestEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(AxolotlTestEntity::new)
-
-					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<BoogeyEntity>> BOOGEY = register("boogey",
 			EntityType.Builder.<BoogeyEntity>of(BoogeyEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(3).setCustomClientFactory(BoogeyEntity::new)
@@ -69,7 +63,6 @@ public class WetowlModModEntities {
 			BigFloppaEntity.init();
 			PigTestEntity.init();
 			RatEntity.init();
-			AxolotlTestEntity.init();
 			BoogeyEntity.init();
 		});
 	}
@@ -80,7 +73,6 @@ public class WetowlModModEntities {
 		event.put(BIG_FLOPPA.get(), BigFloppaEntity.createAttributes().build());
 		event.put(PIG_TEST.get(), PigTestEntity.createAttributes().build());
 		event.put(RAT.get(), RatEntity.createAttributes().build());
-		event.put(AXOLOTL_TEST.get(), AxolotlTestEntity.createAttributes().build());
 		event.put(BOOGEY.get(), BoogeyEntity.createAttributes().build());
 	}
 }

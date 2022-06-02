@@ -2,9 +2,9 @@
   "_fv": 28,
   "_type": "musicdisc",
   "definition": {
-    "texture": "music_disc_rhodes_lofi",
-    "name": "Disc Eienrojin Music",
-    "description": "Eienrojin - juzz for lulz",
+    "texture": "music_disc_jazz",
+    "name": "Music Disc",
+    "description": "Eienrojin - Jazz Grass",
     "creativeTab": {
       "value": "CUSTOM:OwlMisc"
     },

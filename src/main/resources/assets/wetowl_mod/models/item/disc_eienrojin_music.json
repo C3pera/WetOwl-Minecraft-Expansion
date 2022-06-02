@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "wetowl_mod:items/music_disc_rhodes_lofi"
+    "layer0": "wetowl_mod:items/music_disc_jazz"
   }
 }
