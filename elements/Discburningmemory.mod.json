@@ -1,0 +1,17 @@
+{
+  "_fv": 28,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "music_disc_burning_memory",
+    "name": "It's Just A Burning Memory",
+    "description": " Trollge - It's Just A Burning Memory",
+    "creativeTab": {
+      "value": "CUSTOM:OwlMisc"
+    },
+    "music": {
+      "value": "CUSTOM:record_just_burning_memory"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

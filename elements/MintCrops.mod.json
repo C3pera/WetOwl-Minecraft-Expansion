@@ -1,0 +1,26 @@
+{
+  "_fv": 28,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:Mint0"
+      },
+      {
+        "value": "CUSTOM:Mint1"
+      },
+      {
+        "value": "CUSTOM:Mint2"
+      },
+      {
+        "value": "CUSTOM:Mint3"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "mint_crops",
+    "namespace": "crops"
+  }
+}

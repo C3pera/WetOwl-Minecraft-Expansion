@@ -26,8 +26,11 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.wetowlmod.init.WetowlModModTabs;
 import net.mcreator.wetowlmod.init.WetowlModModItems;
 import net.mcreator.wetowlmod.init.WetowlModModEntities;
+import net.mcreator.wetowlmod.init.WetowlModModBlocks;
+import net.mcreator.wetowlmod.init.WetowlModModBlockEntities;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -43,11 +46,12 @@ public class WetowlModMod {
 	private static int messageID = 0;
 
 	public WetowlModMod() {
-
+		WetowlModModTabs.load();
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-
+		WetowlModModBlocks.REGISTRY.register(bus);
 		WetowlModModItems.REGISTRY.register(bus);
 		WetowlModModEntities.REGISTRY.register(bus);
+		WetowlModModBlockEntities.REGISTRY.register(bus);
 
 	}
 
