@@ -1,10 +1,10 @@
 {
-  "record_just_burning_memory": {
+  "record_juzz": {
     "category": "record",
-    "subtitle": "subtitles.record_just_burning_memory",
+    "subtitle": "subtitles.record_juzz",
     "sounds": [
       {
-        "name": "wetowl_mod:burning_memory",
+        "name": "wetowl_mod:juzz_for_lulz",
         "stream": true
       }
     ]
@@ -19,12 +19,12 @@
       }
     ]
   },
-  "record_juzz": {
+  "record_just_burning_memory": {
     "category": "record",
-    "subtitle": "subtitles.record_juzz",
+    "subtitle": "subtitles.record_just_burning_memory",
     "sounds": [
       {
-        "name": "wetowl_mod:juzz_for_lulz",
+        "name": "wetowl_mod:burning_memory",
         "stream": true
       }
     ]

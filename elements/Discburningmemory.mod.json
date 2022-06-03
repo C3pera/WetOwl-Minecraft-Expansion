@@ -3,8 +3,8 @@
   "_type": "musicdisc",
   "definition": {
     "texture": "music_disc_burning_memory",
-    "name": "Music Disc",
-    "description": "Caretaker - It's Just A Burning Memory",
+    "name": "It's Just A Burning Memory",
+    "description": " Trollge - It's Just A Burning Memory",
     "creativeTab": {
       "value": "CUSTOM:OwlMisc"
     },

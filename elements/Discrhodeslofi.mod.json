@@ -3,7 +3,7 @@
   "_type": "musicdisc",
   "definition": {
     "texture": "music_disc_rhodes_lofi",
-    "name": "Music Disc",
+    "name": "Rhodes lofi",
     "description": "Meridian3301 - lofi hiphop style",
     "creativeTab": {
       "value": "CUSTOM:OwlMisc"
