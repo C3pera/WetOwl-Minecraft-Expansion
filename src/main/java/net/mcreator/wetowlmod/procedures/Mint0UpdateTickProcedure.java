@@ -31,9 +31,9 @@ public class Mint0UpdateTickProcedure {
 		double maxGrowCondition = 0;
 		double Grow1Condition = 0;
 		double Grow2Condition = 0;
-		maxGrowCondition = 2000;
-		Grow1Condition = 1000;
-		Grow2Condition = 1700;
+		maxGrowCondition = 1600;
+		Grow1Condition = 700;
+		Grow2Condition = 1400;
 		blockStage0 = WetowlModModBlocks.MINT_0.get().defaultBlockState();
 		blockStage1 = WetowlModModBlocks.MINT_1.get().defaultBlockState();
 		blockStage2 = WetowlModModBlocks.MINT_2.get().defaultBlockState();

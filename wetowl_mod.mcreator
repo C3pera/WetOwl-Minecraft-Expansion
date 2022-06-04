@@ -428,6 +428,15 @@
       "locked_code": false,
       "registry_name": "rusalka_claw",
       "path": "~/Items"
+    },
+    {
+      "name": "MintSoloStructure",
+      "type": "structure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mint_solo_structure",
+      "path": "~/Structures"
     }
   ],
   "variable_elements": [],
@@ -546,6 +555,10 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "Structures",
+        "children": []
       }
     ]
   },

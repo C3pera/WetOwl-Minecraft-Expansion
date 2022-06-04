@@ -28,6 +28,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.wetowlmod.init.WetowlModModTabs;
 import net.mcreator.wetowlmod.init.WetowlModModItems;
+import net.mcreator.wetowlmod.init.WetowlModModFeatures;
 import net.mcreator.wetowlmod.init.WetowlModModEntities;
 import net.mcreator.wetowlmod.init.WetowlModModBlocks;
 import net.mcreator.wetowlmod.init.WetowlModModBlockEntities;
@@ -52,6 +53,7 @@ public class WetowlModMod {
 		WetowlModModItems.REGISTRY.register(bus);
 		WetowlModModEntities.REGISTRY.register(bus);
 		WetowlModModBlockEntities.REGISTRY.register(bus);
+		WetowlModModFeatures.REGISTRY.register(bus);
 
 	}
 

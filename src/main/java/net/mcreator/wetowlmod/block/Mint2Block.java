@@ -49,7 +49,7 @@ public class Mint2Block extends Block
 			EntityBlock {
 	public Mint2Block() {
 		super(BlockBehaviour.Properties.of(Material.PLANT, MaterialColor.PLANT).sound(SoundType.CROP).instabreak().noCollission().noOcclusion()
-				.isRedstoneConductor((bs, br, bp) -> false).dynamicShape());
+				.isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override
@@ -66,11 +66,6 @@ public class Mint2Block extends Block
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		Vec3 offset = state.getOffset(world, pos);
 		return box(0, 0.01, 0, 16, 4, 16).move(offset.x, offset.y, offset.z);
-	}
-
-	@Override
-	public Block.OffsetType getOffsetType() {
-		return Block.OffsetType.XZ;
 	}
 
 	@Override

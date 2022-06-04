@@ -7,7 +7,6 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.material.MaterialColor;
 import net.minecraft.world.level.material.Material;
@@ -22,15 +21,11 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.MenuProvider;
-import net.minecraft.world.InteractionResult;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
 import net.mcreator.wetowlmod.procedures.Mint3WhenFullyGrowdProcedure;
-import net.mcreator.wetowlmod.procedures.Mint3RightMouseClickProcedure;
 import net.mcreator.wetowlmod.procedures.Mint0NearBlockChangedProcedure;
 import net.mcreator.wetowlmod.init.WetowlModModBlocks;
 import net.mcreator.wetowlmod.block.entity.Mint3BlockEntity;
@@ -41,7 +36,7 @@ public class Mint3Block extends Block
 			EntityBlock {
 	public Mint3Block() {
 		super(BlockBehaviour.Properties.of(Material.PLANT, MaterialColor.PLANT).sound(SoundType.CROP).instabreak().noCollission().noOcclusion()
-				.isRedstoneConductor((bs, br, bp) -> false).dynamicShape().noDrops());
+				.isRedstoneConductor((bs, br, bp) -> false).noDrops());
 	}
 
 	@Override
@@ -61,11 +56,6 @@ public class Mint3Block extends Block
 	}
 
 	@Override
-	public Block.OffsetType getOffsetType() {
-		return Block.OffsetType.XZ;
-	}
-
-	@Override
 	public PushReaction getPistonPushReaction(BlockState state) {
 		return PushReaction.DESTROY;
 	}
@@ -81,21 +71,6 @@ public class Mint3Block extends Block
 		boolean retval = super.onDestroyedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
 		Mint3WhenFullyGrowdProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
 		return retval;
-	}
-
-	@Override
-	public InteractionResult use(BlockState blockstate, Level world, BlockPos pos, Player entity, InteractionHand hand, BlockHitResult hit) {
-		super.use(blockstate, world, pos, entity, hand, hit);
-		int x = pos.getX();
-		int y = pos.getY();
-		int z = pos.getZ();
-		double hitX = hit.getLocation().x;
-		double hitY = hit.getLocation().y;
-		double hitZ = hit.getLocation().z;
-		Direction direction = hit.getDirection();
-
-		Mint3RightMouseClickProcedure.execute(world, x, y, z);
-		return InteractionResult.SUCCESS;
 	}
 
 	@Override
