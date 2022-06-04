@@ -25,13 +25,13 @@ public class WetowlModModTabs {
 
 			@OnlyIn(Dist.CLIENT)
 			public boolean hasSearchBar() {
-				return true;
+				return false;
 			}
-		}.setBackgroundSuffix("item_search.png");
+		};
 		TAB_OWL_MISC = new CreativeModeTab("tabowl_misc") {
 			@Override
 			public ItemStack makeIcon() {
-				return new ItemStack(WetowlModModItems.DISCRHODESLOFI.get());
+				return new ItemStack(WetowlModModItems.DISC_EIENROJIN_MUSIC.get());
 			}
 
 			@OnlyIn(Dist.CLIENT)
@@ -42,7 +42,7 @@ public class WetowlModModTabs {
 		TAB_OWL_FOOD = new CreativeModeTab("tabowl_food") {
 			@Override
 			public ItemStack makeIcon() {
-				return new ItemStack(Items.APPLE);
+				return new ItemStack(WetowlModModItems.MINT_LEAVES.get());
 			}
 
 			@OnlyIn(Dist.CLIENT)

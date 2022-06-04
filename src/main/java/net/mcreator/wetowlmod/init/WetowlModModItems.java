@@ -14,6 +14,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.wetowlmod.item.RusalkaClawItem;
 import net.mcreator.wetowlmod.item.MintSeedItem;
 import net.mcreator.wetowlmod.item.MintLeavesItem;
 import net.mcreator.wetowlmod.item.DiscrhodeslofiItem;
@@ -44,6 +45,7 @@ public class WetowlModModItems {
 	public static final RegistryObject<Item> MINT_2 = block(WetowlModModBlocks.MINT_2, null);
 	public static final RegistryObject<Item> MINT_3 = block(WetowlModModBlocks.MINT_3, null);
 	public static final RegistryObject<Item> MINT_LEAVES = REGISTRY.register("mint_leaves", () -> new MintLeavesItem());
+	public static final RegistryObject<Item> RUSALKA_CLAW = REGISTRY.register("rusalka_claw", () -> new RusalkaClawItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

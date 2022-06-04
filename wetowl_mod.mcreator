@@ -419,6 +419,15 @@
       "locked_code": false,
       "registry_name": "mint_3",
       "path": "~/Plants/Mint"
+    },
+    {
+      "name": "RusalkaClaw",
+      "type": "item",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rusalka_claw",
+      "path": "~/Items"
     }
   ],
   "variable_elements": [],
@@ -466,6 +475,7 @@
       "entity.wetowl_mod.pig_test": "Pig Test",
       "entity.wetowl_mod.big_floppa": "Большой Шлеппа",
       "itemGroup.tabowl_misc": "Owl Разное",
+      "item.wetowl_mod.rusalka_claw": "Rusalka Claw",
       "item.wetowl_mod.pig_test_spawn_egg": "Pig Test Spawn Egg",
       "item.wetowl_mod.discburningmemory": "It\u0027s Just A Burning Memory",
       "item.wetowl_mod.disc_eienrojin_music": "Disc Eienrojin Music",
@@ -499,6 +509,7 @@
       "entity.wetowl_mod.big_floppa": "Big Floppa",
       "entity.wetowl_mod.pig_test": "Pig Test",
       "itemGroup.tabowl_misc": "WetOwl\u0027s Music",
+      "item.wetowl_mod.rusalka_claw": "Rusalka Claw",
       "item.wetowl_mod.pig_test_spawn_egg": "Pig Test Spawn Egg",
       "item.wetowl_mod.discburningmemory": "It\u0027s Just A Burning Memory",
       "item.wetowl_mod.disc_eienrojin_music": "Music Disc",
